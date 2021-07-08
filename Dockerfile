@@ -13,7 +13,7 @@ RUN mkdir /JupyterNotebooks
 COPY JupyterNotebooks /JupyterNotebooks
 COPY jupyter.py /conf/jupyter.py
 COPY jupyter_notebook_config.json /root/.jupyter/jupyter_notebook_config.json
-
+COPY 0coffie.ipynb /0coffie.ipynb
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
 CMD /entrypoint.sh
